@@ -1,0 +1,54 @@
+.libraryTileContainer{
+    background-color: $tile-color;  
+    margin-bottom: 50px;
+
+    border-radius: $border-radius;
+    overflow: hidden;
+}
+
+.libraryTile{
+    position: relative;
+    height: 216px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.libraryTileInfo{
+    position: relative;
+    right: 0;
+    flex-grow: 1;
+    margin-right: 20px;
+    display: block;
+    
+    &>h1{
+        font-size: 25px;
+        height: 33%;
+    }
+}
+
+.dropdownBtn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+
+    font-size: 40px;
+    color: $detail-color;
+
+    height: 40px;
+
+    cursor: pointer;
+
+    &>svg{
+        filter: drop-shadow(0 0 2px $detail-color);
+        -webkit-filter: drop-shadow(0 0 2px $detail-color-transparent);
+
+    }
+}
+
+
